@@ -1,5 +1,5 @@
 <?php 
-	include 'conexion.php';
+	include ('conexion.php');
 
 
 		$query = "select * from edificio_C";
@@ -21,9 +21,11 @@
  	<?php 
 
  	if ($resulado->num_rows > 0) {
- 		while ($fila = $resulado->fetch_assoc()) {
+ 		echo "<ul>";
+ 		while ($fila = $resultado->fetch_assoc()) {
  			echo "<p>ID:" . $fila['ID_aula'] . ", Nombre: " . $fila['tipo_aula'] "</p>";
  		}
+ 		echo "</ul>";
  	}
 
  	elseif () {

@@ -5,7 +5,7 @@
 	$contraseña = "";
 	$BD = "proyecto_transversal";
 
-	$conexion = new mysqli_connect($localhost, $root, $contraseña $proyecto_transversal);
+	$conexion = new mysqli_connect($host, $usuario, $contraseña, $BD);
 
 
 	if ($conexionn->connect_error) {
